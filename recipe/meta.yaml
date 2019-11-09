@@ -1,4 +1,4 @@
-{% set version = '0.9.2.1' %}
+{% set version = "0.10.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/learnr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/learnr/learnr_{{ version }}.tar.gz
-  sha256: a5ef6215befdd65a94961faf013661b5a3bf77825bc33f3dd2fff0e9cc037349
+  sha256: 660aa4e0d18b38520f0a3a3434fcd9c0b5e87996138c74335896b0b96cc2e808
 
 build:
   merge_build_host: True  # [win]
@@ -25,6 +25,8 @@ requirements:
     - {{posix}}zip               # [win]
   host:
     - r-base
+    - r-checkmate
+    - r-ellipsis >=0.2.0.1
     - r-evaluate
     - r-htmltools >=0.3.5
     - r-htmlwidgets
@@ -32,12 +34,15 @@ requirements:
     - r-knitr >=1.14
     - r-markdown
     - r-rappdirs
-    - r-rmarkdown >=1.8
+    - r-renv >=0.8.0
+    - r-rmarkdown >=1.12.0
     - r-rprojroot
     - r-shiny >=1.0
     - r-withr
   run:
     - r-base
+    - r-checkmate
+    - r-ellipsis >=0.2.0.1
     - r-evaluate
     - r-htmltools >=0.3.5
     - r-htmlwidgets
@@ -45,7 +50,8 @@ requirements:
     - r-knitr >=1.14
     - r-markdown
     - r-rappdirs
-    - r-rmarkdown >=1.8
+    - r-renv >=0.8.0
+    - r-rmarkdown >=1.12.0
     - r-rprojroot
     - r-shiny >=1.0
     - r-withr
@@ -59,7 +65,6 @@ about:
   home: https://rstudio.github.io/learnr/
   license: Apache-2.0
   license_family: APACHE
-  license_file: "LICENSE"
   summary: Create interactive tutorials using R Markdown. Use a combination  of narrative, figures,
     videos, exercises, and quizzes to create self-paced tutorials for learning about
     R and R packages.
