@@ -13,8 +13,8 @@ source:
   sha256: 6174932b8dbdb7c458c8d89e242359b0903040332cd1e5741b1e956e74adbc23
 
 build:
-  merge_build_host: True  # [win]
-  number: 0
+  merge_build_host: true  # [win]
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -22,7 +22,7 @@ build:
 
 requirements:
   build:
-    - {{posix}}zip               # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-checkmate
@@ -65,9 +65,8 @@ about:
   home: https://rstudio.github.io/learnr/
   license: Apache-2.0
   license_family: APACHE
-  summary: Create interactive tutorials using R Markdown. Use a combination  of narrative, figures,
-    videos, exercises, and quizzes to create self-paced tutorials for learning about
-    R and R packages.
+  license_file: LICENSE-2.0.txt
+  summary: Create interactive tutorials using R Markdown. Use a combination  of narrative, figures, videos, exercises, and quizzes to create self-paced tutorials for learning about R and R packages.
 
 extra:
   recipe-maintainers:
