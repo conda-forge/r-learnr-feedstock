@@ -36,7 +36,6 @@ requirements:
     - r-knitr >=1.31
     - r-lifecycle
     - r-markdown
-    - r-parallel
     - r-promises
     - r-rappdirs
     - r-renv >=0.8.0
@@ -58,7 +57,6 @@ requirements:
     - r-knitr >=1.31
     - r-lifecycle
     - r-markdown
-    - r-parallel
     - r-promises
     - r-rappdirs
     - r-renv >=0.8.0
