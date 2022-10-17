@@ -1,4 +1,4 @@
-{% set version = "0.10.1" %}
+{% set version = "0.11.0" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/learnr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/learnr/learnr_{{ version }}.tar.gz
-  sha256: 6174932b8dbdb7c458c8d89e242359b0903040332cd1e5741b1e956e74adbc23
+  sha256: 7ed6beda9dab651ed1f4061452928dd418d4b87c96d0a0af67e095f0078fbf35
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -26,15 +26,20 @@ requirements:
   host:
     - r-base
     - r-checkmate
+    - r-curl
+    - r-digest
     - r-ellipsis >=0.2.0.1
     - r-evaluate
     - r-htmltools >=0.3.5
     - r-htmlwidgets
     - r-jsonlite
-    - r-knitr >=1.14
+    - r-knitr >=1.31
+    - r-lifecycle
     - r-markdown
+    - r-promises
     - r-rappdirs
     - r-renv >=0.8.0
+    - r-rlang
     - r-rmarkdown >=1.12.0
     - r-rprojroot
     - r-shiny >=1.0
@@ -42,15 +47,20 @@ requirements:
   run:
     - r-base
     - r-checkmate
+    - r-curl
+    - r-digest
     - r-ellipsis >=0.2.0.1
     - r-evaluate
     - r-htmltools >=0.3.5
     - r-htmlwidgets
     - r-jsonlite
-    - r-knitr >=1.14
+    - r-knitr >=1.31
+    - r-lifecycle
     - r-markdown
+    - r-promises
     - r-rappdirs
     - r-renv >=0.8.0
+    - r-rlang
     - r-rmarkdown >=1.12.0
     - r-rprojroot
     - r-shiny >=1.0
