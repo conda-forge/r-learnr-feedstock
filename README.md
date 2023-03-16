@@ -1,11 +1,11 @@
-About r-learnr
-==============
+About r-learnr-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-learnr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://rstudio.github.io/learnr/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-learnr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Create interactive tutorials using R Markdown. Use a combination  of narrative, figures, videos, exercises, and quizzes to create self-paced tutorials for learning about R and R packages.
 
