@@ -1,4 +1,4 @@
-{% set version = "0.11.3" %}
+{% set version = "0.11.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/learnr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/learnr/learnr_{{ version }}.tar.gz
-  sha256: 504db8ab2ece10b8379176e54900d4fe67f592d8d0f9479cf3f406e9ce855eaf
+  sha256: ee64bd88cda6ddec8c9a2a561099461db915f6e99fe27e3c314b748faa1655d4
 
 build:
   merge_build_host: true  # [win]
