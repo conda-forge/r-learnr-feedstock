@@ -144,6 +144,6 @@ Feedstock Maintainers
 =====================
 
 * [@benhuff](https://github.com/benhuff/)
-* [@conda-forge/r](https://github.com/conda-forge/r/)
+* [@conda-forge/r](https://github.com/orgs/conda-forge/teams/r/)
 * [@oblute](https://github.com/oblute/)
 
