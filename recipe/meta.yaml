@@ -1,4 +1,4 @@
-{% set version = "0.11.5" %}
+{% set version = "0.11.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/learnr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/learnr/learnr_{{ version }}.tar.gz
-  sha256: 5e4cf4304a2e1362ec2523af743195b7545c0dbaed0f0065e3d34a2da379b107
+  sha256: 41969b8fd7814773780940962ae2c631df365e883c0ec5248d8a0d6eee02c742
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
